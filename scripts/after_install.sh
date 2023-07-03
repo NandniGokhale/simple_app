@@ -13,8 +13,8 @@ cd /home/ubuntu/simple_app/
 python3 -m venv venv
 source venv/bin/activate
 
-install requirements.txt
+# install requirements.txt
 pip install -r /home/ubuntu/simple_app/requirements.txt
 
 # run server
-screen -d -m python3 manage.py runserver 0.0.0.0:8000
+screen -d -m python3 manage.py runserver 0:8000
