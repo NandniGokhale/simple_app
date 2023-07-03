@@ -11,8 +11,8 @@ sudo pkill -f runserver
 cd /home/ubuntu/simple_app/
 
 # activate virtual environment
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv newenv
+source newenv/bin/activate
 
 # install requirements.txt
 pip install -r /home/ubuntu/simple_app/requirements.txt
