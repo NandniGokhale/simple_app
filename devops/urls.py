@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import path, include  # new
 
+# from devops.views import home_view
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('', return HttpResponse("<h1>Hello World</h1>"))
+    # path(' ',home_view,name= home_view),
+    path("", include("pages.urls")),  # new
+
 ]
